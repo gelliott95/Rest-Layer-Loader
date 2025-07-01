@@ -7,4 +7,4 @@ author=Grant Elliott
 email=gelliott@groffengineering.com
 category=Data Management
 icon=icon.png
-repository=https://github.com/gelliott95
+repository=https://github.com/gelliott95/Rest-Layer-Loader

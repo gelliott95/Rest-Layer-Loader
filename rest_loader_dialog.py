@@ -37,11 +37,11 @@ class RestLoaderDialog(QDialog):
         self.layout = QVBoxLayout(self)
 
         # 1) Spatial filter dropdown
-        self.layout.addWidget(QLabel("Load layers from:"))
+        self.layout.addWidget(QLabel("Load data from:"))
         self.combo = QComboBox()
-        self.combo.addItem("All Layers", "all")
         self.combo.addItem("Current Map Extent", "extent")
         self.combo.addItem("Selected Polygon", "polygon")
+        self.combo.addItem("All Data", "all")
         self.layout.addWidget(self.combo)
 
         # 2) Raster‐toggle (default unchecked = vector by default)
