@@ -1,0 +1,10 @@
+[general]
+name=REST Layer Loader
+description=Load predefined MapServer and FeatureServer layers by map extent or selected polygon
+version=0.0.1
+qgisMinimumVersion=3.16
+author=Grant Elliott
+email=gelliott@groffengineering.com
+category=Data Management
+icon=icon.png
+repository=https://github.com/gelliott95
