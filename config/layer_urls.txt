@@ -1,3 +1,2 @@
 #Store Map and Feature Server URLs you wish to load in QGIS here
-#https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0
-#https://services2.arcgis.com/FiaPA4ga0iQKduv3/ArcGIS/rest/services/Petroleum_Products_Pipelines_1/FeatureServer/0
+https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0
