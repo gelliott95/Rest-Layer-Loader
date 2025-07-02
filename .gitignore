@@ -3,8 +3,6 @@
 
 # ignore all files in styles/
 /styles/*
-# but keep the folder itself
-!/styles/
 # and don’t ignore this one example file
 !/styles/119th congressional districts.qml
 
