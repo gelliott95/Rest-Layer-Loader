@@ -1,2 +1,2 @@
-#Store Map and Feature Server URLs you wish to load in QGIS here. One per line.
-https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/0
+#Store Map and Feature Server URLs you wish to load in QGIS here
+https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/Legislative/MapServer/0

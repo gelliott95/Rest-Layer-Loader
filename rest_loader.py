@@ -4,6 +4,7 @@ import os
 import re
 import json
 import requests
+import shutil
 from urllib.parse import urlencode
 
 from PyQt5.QtWidgets import QAction, QMessageBox
@@ -36,6 +37,18 @@ def clean_title(raw):
     no_num = re.sub(r'_\d+$', '', raw)
     return no_num.replace('_', ' ')
 
+def _get_urls_path(self):
+    tpl = os.path.join(self.plugin_dir, "config", "layer_urls.txt")
+    local = os.path.join(self.plugin_dir, "config", "layer_urls.local.txt")
+    if not os.path.exists(local):
+        shutil.copy(tpl, local)
+    return local
+
+def _read_layer_urls(self):
+    path = self._get_urls_path()
+    with open(path, "r", encoding="utf-8") as f:
+        return [ln.strip() for ln in f
+                if ln.strip() and not ln.startswith("#")]
 
 class RestLoader:
     def __init__(self, iface):
@@ -94,7 +107,7 @@ class RestLoader:
             self.iface.removePluginMenu("&REST Loader", act)
             
     def open_layer_urls(self):
-        path = os.path.join(os.path.dirname(__file__), "config", "layer_urls.txt")
+        path = os.path.join(os.path.dirname(__file__), "config", "layer_urls.local.txt")
         os.makedirs(os.path.dirname(path), exist_ok=True)
         if not os.path.exists(path):
             open(path, "a").close()
