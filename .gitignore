@@ -1,12 +1,12 @@
 # ignore private URL list
-/config/layer_urls.txt
+/config/layer_urls.local.txt
 
 # ignore all files in styles/
 /styles/*
 # but keep the folder itself
 !/styles/
 # and don’t ignore this one example file
-!/styles/example_style.qml
+!/styles/119th congressional districts.qml
 
 # ignore pycache
 __pycache__/
